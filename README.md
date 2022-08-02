@@ -12,7 +12,7 @@ Order of items shown in the presentation:
 - Move items to devDependencies
 - Re-run `npm install`
 - Run `npm start`
-- Add `var foo = 'bar'` to `src/App.js` to show linting errors
+- ~~Add `var foo = 'bar'` to `src/App.js` to show linting errors~~
 
 ### 2. Modify App.js
 
