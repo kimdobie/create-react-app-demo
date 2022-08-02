@@ -1,0 +1,16 @@
+[
+  { "name": "Tyrannosaurus Rex", "type": "carnivore" },
+  { "name": "Stegosaurus", "type": "herbivore" },
+  { "name": "Triceratops", "type": "herbivore" },
+  { "name": "Velociraptor", "type": "carnivore" },
+  { "name": "Spinosaurus", "type": "carnivore" },
+  { "name": "Allosaurus", "type": "carnivore" },
+  { "name": "Archaeopteryx", "type": "carnivore" },
+  { "name": "Megalosaurus", "type": "carnivore" },
+  { "name": "Diplodocus", "type": "herbivore" },
+  { "name": "Ankylosaurus", "type": "herbivore" },
+  { "name": "Brachiosaurus", "type": "herbivore" },
+  { "name": "Iguanodon", "type": "herbivore" },
+  { "name": "Parasaurolophus", "type": "herbivore" },
+  { "name": "Hadrosaurus", "type": "herbivore" }
+]
