@@ -1,6 +1,6 @@
 import React from "react";
 import axios from "axios";
-import Spinner from "react-bootstrap/Spinner";
+import ClipLoader from "react-spinners/ClipLoader";
 import DinoListItem from "./DinoListItem";
 
 const headerText = "Dino List";
@@ -36,7 +36,7 @@ const Dinos = () => {
   return (
     <div>
       <h3>{headerText}</h3>
-      {loading ? <Spinner animation='border' /> : null}
+        <ClipLoader  loading={loading}  size={50} />
       <ul>
         {/* <li> {dinoList[0].name}</li> */}
         {dinos.map((dino) => (

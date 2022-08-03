@@ -4,7 +4,7 @@ This repo contains the finished code for the Introduction to JS Libraries with R
 
 Order of items shown in the presentation:
 
-### 1. Bootstrap repo
+### 1. Create app
 
 - Create the app by running `npx create-react-app my-app`
 - Open folder in Visual Studio Code
@@ -46,10 +46,11 @@ Order of items shown in the presentation:
 
 - Add `axios` to project and run `npm i`
 - Add `useEffect` to load dinos from API
-- ~~Add `bootstrap` and `react-bootstrap`~~ - Show website
-- ~~Run `npm i`~~
-- ~~Add `loading` to state~~
-- ~~Add `<Spinner />` component~~
+- Add `react-spinners` - Show website (https://www.npmjs.com/package/react-spinners)
+- Run `npm i`
+- Add `loading` to state
+- Add `<Spinner />` component
+- Show React-Bootstrap - https://react-bootstrap.github.io/components/alerts
 
 ### 7. Running tests
 
