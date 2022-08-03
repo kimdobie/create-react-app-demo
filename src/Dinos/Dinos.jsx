@@ -33,19 +33,7 @@ const Dinos = () => {
     });
   }, []);
 
-  return (
-    <div>
-      <h3>{headerText}</h3>
-        <ClipLoader  loading={loading}  size={50} />
-      <ul>
-        {/* <li> {dinoList[0].name}</li> */}
-        {dinos.map((dino) => (
-          //   <li>{dino.name}</li>
-          <DinoListItem name={dino.name} type={dino.type} />
-        ))}
-      </ul>
-      <p>
-        <button
+  const SortButton = () => ( <button
           onClick={() => {
             let sortedDinos = [...dinos];
             if (sortAscending === undefined) {
@@ -60,7 +48,22 @@ const Dinos = () => {
           }}
         >
           Sort
-        </button>
+        </button>)
+
+  return (
+    <div>
+      <h3>{headerText}</h3>
+        <ClipLoader  loading={loading}  size={50} />
+      <ul>
+        {/* <li> {dinoList[0].name}</li> */}
+        {dinos.map((dino) => (
+          //   <li>{dino.name}</li>
+          <DinoListItem name={dino.name} type={dino.type} />
+        ))}
+      </ul>
+      <p>
+        
+       <SortButton />
       </p>
     </div>
   );
