@@ -1,5 +1,9 @@
-import logo from './logo.svg';
-import './App.css';
+import logo from "./logo.svg";
+import "./App.css";
+
+import Dinos from "./Dinos/Dinos";
+
+const headerText = "Hello Dinos!";
 
 function App() {
   return (
@@ -18,6 +22,10 @@ function App() {
           Learn React
         </a>
       </header>
+      <main>
+        <h2>{headerText}</h2>
+        <Dinos />
+      </main>
     </div>
   );
 }

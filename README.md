@@ -1,70 +1,72 @@
 # Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This repo contains the finished code for the Introduction to JS Libraries with ReactJS presentation.
 
-## Available Scripts
+Order of items shown in the presentation:
 
-In the project directory, you can run:
+### 1. Create app
 
-### `npm start`
+- Create the app by running `npx create-react-app my-app`
+- Open folder in Visual Studio Code
+- Go over each file/directory and explain what it does
+- Move items to devDependencies
+- Re-run `npm install`
+- Run `npm start`
+- ~~Add `var foo = 'bar'` to `src/App.js` to show linting errors~~
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### 2. Modify App.js
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- Add `<main>`
+- Create `headerText` const and display
 
-### `npm test`
+### 3. Add simple Dino.jsx
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- Create `<Dinos />` component - NO export - Static content
+- Add `<Dinos />` to `App.js`
+- Add export to `<Dinos />`
+- ~~Add `headerText` in `<Dinos />` - No conflict~~
+- Comment out header (This will cause tests to fail later)
+- Add `dinoList` and use `map` to display `li`
 
-### `npm run build`
+### 4. Adding dinos to state and sort
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- Move `dinoList` to state
+- Add `Sort` button
+- ~~Add `sortAscending` to state and modify onClick~~
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### 5. Add dino details
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- Add `<DinoListItem>` component and set 'name' and 'type' props
+- Add `<DinoListItem>` to `<DinoList>`
+- Add `leaf.svg` to project
+- Add if for herbivore - so image if herbivore
+- ~~Add style to `leaf img`~~
 
-### `npm run eject`
+### 6. Make ajax call (and bootstrap)
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+- Add `axios` to project and run `npm i`
+- Add `useEffect` to load dinos from API
+- Add `react-spinners` - Show website (https://www.npmjs.com/package/react-spinners)
+- Run `npm i`
+- Add `loading` to state
+- Add `<Spinner />` component
+- Show React-Bootstrap - https://react-bootstrap.github.io/components/alerts
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### 7. Running tests
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+- Run `npm run test`
+- Look at `App.test.js`
+- Add `DinoListItem.test.jsx`
+- ~~Add coverage by adding `--coverage` to test script in package.json~~
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+### 8. Build
 
-## Learn More
+- Run `npm run build`
+- Show `build` directory
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Be prepared to add/show the following:
 
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- react-router
+- styled-components
+- configure eslint
+- add jest coverage
